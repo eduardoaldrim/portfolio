@@ -4,11 +4,6 @@ Portfólio pessoal de Eduardo Aldrim, estudante de Engenharia de Software, desen
 
 **Versão publicada:** https://eduardoaldrim.github.io/portfolio/
 
-## Como abrir
-
-- **Sem instalar nada:** baixe ou clone o repositório e abra o `index.html` no navegador.
-- **Publicado:** no GitHub, vá em _Settings > Pages_, escolha a branch `main` e a pasta `/ (root)`. Em alguns minutos o site fica disponível em `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
-
 Não há dependências externas: fontes, imagens e scripts estão no próprio projeto.
 
 ## Funcionalidades
