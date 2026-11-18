@@ -2,7 +2,7 @@
 
 Portfólio pessoal de Eduardo Aldrim, estudante de Engenharia de Software, desenvolvido na disciplina de Programação Front-End da UCSAL. Ele apresenta formação, conhecimentos, projetos (incluindo o STL, tradutor de Libras para português premiado na FENIC e terceiro lugar na FEBRACE) e formas de contato.
 
-**Versão publicada:** _adicione aqui o link do GitHub Pages_
+**Versão publicada:** https://eduardoaldrim.github.io/portfolio/
 
 ## Como abrir
 
