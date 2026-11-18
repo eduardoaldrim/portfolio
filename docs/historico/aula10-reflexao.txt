@@ -1,0 +1,72 @@
+PORTFÓLIO RESPONSIVO - AULA 10
+Aluno: Eduardo Aldrim
+Disciplina: Programação Front-End - UCSAL
+
+==========================================================
+ETAPA 1 - DIAGNÓSTICO DA VERSÃO ANTERIOR
+==========================================================
+Testei a versão anterior no DevTools em 390 px (celular), 768 px (tablet)
+e 1366 px (desktop). Capturas: img/evidencias/antes-390px.png,
+antes-768px.png e antes-1366px.png.
+
+Problemas encontrados:
+1. O style.css usava classes (.cabecalho, .menu, .secao, .cards, .card,
+   .botao, .extra) que não existiam no index.html. Por isso o cabeçalho não
+   tinha fundo, o menu era só uma linha de links pequenos e grudados, e os
+   projetos não apareciam como cards.
+2. No celular o texto encostava nas bordas da tela (body com margin 0 e sem
+   padding) e a tabela de habilidades ficava espremida, com palavras
+   quebrando em várias linhas ("Git e GitHub", "Automação de testes...").
+3. No desktop as linhas de texto ficavam longas demais (a página ocupava os
+   1366 px inteiros), o que cansa a leitura.
+4. Os links do menu e dos projetos eram pequenos para tocar com o dedo.
+
+==========================================================
+ETAPA 4 - TESTES
+==========================================================
+Testei em 390 px, 600 px (largura intermediária), 768 px, 1024 px
+(largura intermediária) e 1366 px. Em todas, a largura do conteúdo
+(scrollWidth) ficou igual à largura da tela, ou seja, sem rolagem
+horizontal. Links, botões e formulário continuam funcionando.
+Capturas: img/evidencias/depois-390px.png, depois-600px.png,
+depois-768px.png, depois-1024px.png e depois-1366px.png.
+
+==========================================================
+ETAPA 5 - REFLEXÃO
+==========================================================
+1) Quais foram os dois principais problemas encontrados na versão inicial?
+O principal foi que as classes do CSS não estavam no HTML, então o menu,
+o cabeçalho e os cards de projetos não recebiam o estilo. O segundo foi a
+leitura no celular: o texto encostava na borda da tela e a tabela de
+habilidades ficava apertada, com as palavras quebrando em várias linhas.
+
+2) Que propriedades CSS e Media Queries você utilizou para resolvê-los?
+Liguei o HTML ao CSS adicionando as classes. Usei display: flex com gap,
+flex-wrap, flex-direction, align-items e justify-content no cabeçalho, no
+menu, na lista de conhecimentos e nos cards. Nos cards usei flex: 1 1 280px
+para eles se reorganizarem sozinhos (3, 2 ou 1 por linha). Usei
+max-width no main para limitar a largura do texto, box-sizing: border-box,
+max-width: 100% nas imagens e overflow-wrap nos links para nada vazar.
+Criei duas media queries: @media (max-width: 900px) e
+@media (max-width: 600px). Na de 600 px a tabela vira blocos com rótulos
+(display: block e td::before com content: attr(data-label)), os cards ficam
+em uma coluna, o menu vira botões em duas colunas e os espaçamentos diminuem.
+
+3) Quais breakpoints escolheu e qual foi o motivo?
+900 px: abaixo dessa largura o menu não cabia mais ao lado da foto e do nome
+sem ficar apertado, então o cabeçalho passa a ser em coluna e centralizado.
+600 px: abaixo disso a tabela de três colunas começava a quebrar as palavras
+e os cards ficavam estreitos demais, então mudo a tabela para blocos e
+deixo um card por linha. Escolhi as larguras observando onde o meu layout
+começava a quebrar no DevTools, e não por um modelo de aparelho específico.
+Os cards não precisaram de breakpoint próprio, porque o flex-wrap já faz
+eles mudarem de 3 para 2 colunas sozinhos.
+
+4) O que mudou na experiência de navegação pelo celular depois das melhorias?
+Agora o texto tem margem e fica confortável de ler, o menu tem botões
+grandes em duas colunas, fáceis de tocar, e a tabela de habilidades aparece
+como fichas organizadas, sem palavras quebradas. Os projetos aparecem como
+cards, um embaixo do outro, com botões na largura toda, e os campos do
+formulário têm fonte de 16 px, o que evita o zoom automático do celular.
+A página não tem rolagem horizontal e mantém as cores e a identidade do
+portfólio.

@@ -1,0 +1,3 @@
+Formulário enviado vazio na versão antiga, sem nenhum bloqueio.
+Endereço gerado: https://wa.me/5571996592109?nome=&email=&text=
+O wa.me só usa o parâmetro 'text': nome e e-mail eram descartados.

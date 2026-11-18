@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Eduardo Aldrim, estudante de Engenharia de Software: desenvolvimento web, Inteligência Artificial e o projeto STL, tradutor de Libras para português."
+    />
+    <title>Eduardo Aldrim | Portfólio</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- Cabeçalho fixo com navegação -->
+    <header class="topo">
+      <div class="topo__interno">
+        <a class="marca" href="#inicio">Eduardo Aldrim</a>
+
+        <button
+          class="botao-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navegacao"
+        >
+          Menu
+        </button>
+
+        <nav id="navegacao" class="navegacao" aria-label="Seções do portfólio">
+          <a href="#sobre">Sobre mim</a>
+          <a href="#conhecimentos">Conhecimentos</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <button
+          class="botao-tema"
+          type="button"
+          aria-pressed="false"
+          title="Alternar tema escuro"
+        >
+          <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" />
+          </svg>
+          <span class="visualmente-oculto">Tema escuro</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <!-- Apresentação -->
+      <section id="inicio" class="apresentacao" aria-labelledby="titulo-principal">
+        <div class="apresentacao__interno">
+          <div class="apresentacao__texto">
+            <img
+              class="foto-perfil"
+              src="img/avatar-eduardo.svg"
+              alt="Avatar com as iniciais de Eduardo Aldrim"
+              width="72"
+              height="72"
+            />
+            <h1 id="titulo-principal">Eduardo Aldrim</h1>
+            <p class="apresentacao__papel">
+              Estudante de Engenharia de Software em formação
+            </p>
+            <p class="apresentacao__resumo">
+              Desenvolvo sites com HTML, CSS e JavaScript e trabalho com modelos de
+              Inteligência Artificial. Meu projeto mais conhecido é o STL, um
+              tradutor de Libras para português premiado na FENIC e terceiro lugar
+              na FEBRACE, na USP.
+            </p>
+            <p class="apresentacao__objetivo">
+              <strong>Objetivo atual:</strong> evoluir meus projetos Front-End e
+              aprofundar meus estudos em Inteligência Artificial.
+            </p>
+            <div class="apresentacao__acoes">
+              <a class="botao botao--destaque" href="#projetos">Ver projetos</a>
+              <a class="botao botao--contorno" href="#contato">Entrar em contato</a>
+            </div>
+          </div>
+
+          <!-- Ilustração dos 21 pontos da mão usados pelo STL -->
+          <figure class="mao">
+            <svg
+              class="mao__desenho"
+              viewBox="0 0 400 440"
+              role="img"
+              aria-labelledby="mao-legenda"
+            >
+              <g class="mao__moldura" fill="none" stroke-width="2">
+                <path d="M30 70 V30 H70" />
+                <path d="M330 30 H370 V70" />
+                <path d="M370 370 V410 H330" />
+                <path d="M70 410 H30 V370" />
+              </g>
+              <g class="mao__ligacoes" fill="none" stroke-width="3" stroke-linecap="round">
+                <path pathLength="1" d="M200 400 L150 370 L112 330 L88 290 L70 255" />
+                <path pathLength="1" d="M200 400 L160 250 L150 190 L144 152 L139 118" />
+                <path pathLength="1" d="M160 250 L200 242 L200 172 L200 128 L200 90" />
+                <path pathLength="1" d="M200 242 L238 252 L246 190 L251 152 L255 120" />
+                <path pathLength="1" d="M238 252 L272 272 L290 226 L300 196 L308 168" />
+                <path pathLength="1" d="M200 400 L272 272" />
+              </g>
+              <g class="mao__pontos">
+                <circle cx="200" cy="400" r="8" />
+                <circle cx="150" cy="370" r="5" /><circle cx="112" cy="330" r="5" />
+                <circle cx="88" cy="290" r="5" /><circle cx="70" cy="255" r="6" />
+                <circle cx="160" cy="250" r="5" /><circle cx="150" cy="190" r="5" />
+                <circle cx="144" cy="152" r="5" /><circle cx="139" cy="118" r="6" />
+                <circle cx="200" cy="242" r="5" /><circle cx="200" cy="172" r="5" />
+                <circle cx="200" cy="128" r="5" /><circle cx="200" cy="90" r="6" />
+                <circle cx="238" cy="252" r="5" /><circle cx="246" cy="190" r="5" />
+                <circle cx="251" cy="152" r="5" /><circle cx="255" cy="120" r="6" />
+                <circle cx="272" cy="272" r="5" /><circle cx="290" cy="226" r="5" />
+                <circle cx="300" cy="196" r="5" /><circle cx="308" cy="168" r="6" />
+              </g>
+            </svg>
+            <figcaption id="mao-legenda">
+              Os 21 pontos da mão que o STL acompanha pela webcam para reconhecer
+              sinais da Libras.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Sobre mim -->
+      <section id="sobre" class="secao" aria-labelledby="titulo-sobre">
+        <div class="secao__interno sobre">
+          <div class="sobre__texto">
+            <h2 id="titulo-sobre">Sobre mim</h2>
+            <p>
+              Meu nome é Eduardo Aldrim, sou estudante de Engenharia de Software e
+              tenho experiência com desenvolvimento de sites usando HTML, CSS e
+              JavaScript. Também trabalho com Git e GitHub, CI/CD e automações
+              usando N8N.
+            </p>
+            <p>
+              Tenho experiência no desenvolvimento de modelos de Inteligência
+              Artificial. Um dos resultados desse trabalho é o STL, um tradutor de
+              Libras para português que foi premiado na FENIC e conquistou o
+              terceiro lugar na FEBRACE, na USP.
+            </p>
+
+            <h3>Trajetória</h3>
+            <ul class="trajetoria">
+              <li>
+                <strong>Engenharia de Software</strong>
+                <span>Graduação em andamento na UCSAL.</span>
+              </li>
+              <li>
+                <strong>FEBRACE, USP</strong>
+                <span>Terceiro lugar com o STL, tradutor de Libras para português.</span>
+              </li>
+              <li>
+                <strong>FENIC</strong>
+                <span>STL premiado na feira.</span>
+              </li>
+              <li>
+                <strong>Inglês avançado</strong>
+                <span>Nível B2 com certificado de Cambridge.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Área complementar -->
+          <aside class="extra" aria-labelledby="titulo-extra">
+            <h3 id="titulo-extra">Informações extras</h3>
+            <dl class="extra__lista">
+              <div>
+                <dt>LinkedIn</dt>
+                <dd>
+                  <a href="https://www.linkedin.com/in/eduardoaldrim" rel="noopener"
+                    >linkedin.com/in/eduardoaldrim</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>Idiomas</dt>
+                <dd>
+                  Português (nativo) e inglês (avançado, nível B2, com certificado de
+                  Cambridge, buscando atingir a proficiência no nível C2)
+                </dd>
+              </div>
+              <div>
+                <dt>Interesses</dt>
+                <dd>Machine Learning, Inteligência Artificial e Cibersegurança</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Conhecimentos -->
+      <section id="conhecimentos" class="secao secao--alternada" aria-labelledby="titulo-conhecimentos">
+        <div class="secao__interno">
+          <h2 id="titulo-conhecimentos">Conhecimentos</h2>
+          <p class="secao__introducao">
+            Tecnologias que uso hoje e onde aplico cada uma delas.
+          </p>
+
+          <ul class="etiquetas">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git e GitHub</li>
+            <li>CI/CD</li>
+            <li>Automações com N8N</li>
+            <li>Desenvolvimento de modelos de Inteligência Artificial</li>
+          </ul>
+
+          <!-- Tabela de habilidades: dados em linhas e colunas -->
+          <table class="tabela-habilidades">
+            <caption class="visualmente-oculto">Habilidades técnicas, nível e onde aplico</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tecnologia</th>
+                <th scope="col">Nível</th>
+                <th scope="col">Onde aplico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Tecnologia">HTML</td>
+                <td data-label="Nível">Intermediário</td>
+                <td data-label="Onde aplico">Estrutura de páginas</td>
+              </tr>
+              <tr>
+                <td data-label="Tecnologia">CSS</td>
+                <td data-label="Nível">Intermediário</td>
+                <td data-label="Onde aplico">Estilização visual</td>
+              </tr>
+              <tr>
+                <td data-label="Tecnologia">JavaScript</td>
+                <td data-label="Nível">Intermediário</td>
+                <td data-label="Onde aplico">Interatividade</td>
+              </tr>
+              <tr>
+                <td data-label="Tecnologia">Git e GitHub</td>
+                <td data-label="Nível">Intermediário</td>
+                <td data-label="Onde aplico">Versionamento de código</td>
+              </tr>
+              <tr>
+                <td data-label="Tecnologia">CI/CD</td>
+                <td data-label="Nível">Intermediário</td>
+                <td data-label="Onde aplico">Automação de testes e publicação de projetos</td>
+              </tr>
+              <tr>
+                <td data-label="Tecnologia">N8N</td>
+                <td data-label="Nível">Intermediário</td>
+                <td data-label="Onde aplico">Automação de tarefas e fluxos de trabalho</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" class="secao" aria-labelledby="titulo-projetos">
+        <div class="secao__interno">
+          <h2 id="titulo-projetos">Projetos</h2>
+          <p class="secao__introducao">
+            Um projeto de Inteligência Artificial premiado e os projetos que
+            desenvolvi nas aulas de Programação Front-End.
+          </p>
+
+          <!-- Filtro: aparece só com JavaScript ativo -->
+          <div class="filtro" data-somente-js>
+            <div class="filtro__busca">
+              <label for="busca-projetos">Buscar por nome ou tecnologia</label>
+              <input
+                id="busca-projetos"
+                type="search"
+                autocomplete="off"
+                placeholder="Ex.: Python, HTML"
+              />
+            </div>
+            <div class="filtro__categorias" role="group" aria-label="Filtrar por categoria">
+              <button type="button" class="filtro__opcao" data-filtro="todos" aria-pressed="true">Todos</button>
+              <button type="button" class="filtro__opcao" data-filtro="ia" aria-pressed="false">Inteligência Artificial</button>
+              <button type="button" class="filtro__opcao" data-filtro="web" aria-pressed="false">Web</button>
+              <button type="button" class="filtro__opcao" data-filtro="aula" aria-pressed="false">Projetos de aula</button>
+            </div>
+            <p id="contagem-projetos" class="filtro__contagem" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="lista-projetos">
+            <!-- Projeto em destaque -->
+            <article
+              id="stl"
+              class="projeto projeto--destaque"
+              data-categorias="ia"
+              aria-labelledby="titulo-stl"
+            >
+              <img
+                class="projeto__imagem"
+                src="img/projetos/stl.svg"
+                alt="Ilustração do STL: a webcam marca os pontos da mão e a palavra reconhecida aparece em português."
+                width="640"
+                height="400"
+              />
+              <div class="projeto__corpo">
+                <p class="projeto__tipo">Inteligência Artificial</p>
+                <h3 id="titulo-stl">STL: tradutor de Libras para português</h3>
+                <p>
+                  Sistema que reconhece sinais da Libras em tempo real pela webcam e
+                  traduz para o português, usando Inteligência Artificial e visão
+                  computacional. O sistema identifica os pontos das mãos do usuário, e
+                  um modelo de rede neural treinado com dados coletados pela equipe
+                  reconhece qual sinal foi feito. O resultado é exibido em uma
+                  aplicação web.
+                </p>
+                <p class="projeto__premio">
+                  Premiado na FENIC e terceiro lugar na FEBRACE, na USP.
+                </p>
+                <ul class="tecnologias">
+                  <li>Python</li><li>TensorFlow</li><li>Keras</li>
+                  <li>MediaPipe</li><li>Flask</li><li>HTML</li>
+                </ul>
+                <div class="projeto__acoes">
+                  <a class="botao" href="#contato" data-assunto="Sobre o projeto STL">Conversar sobre o STL</a>
+                </div>
+              </div>
+              <!-- Painel lateral: contexto do projeto -->
+              <dl class="projeto__detalhes projeto__detalhes--painel">
+                <div>
+                  <dt>Problema</dt>
+                  <dd>A falta de intérpretes dificulta a conversa entre pessoas surdas e ouvintes que não conhecem Libras.</dd>
+                </div>
+                <div>
+                  <dt>Público</dt>
+                  <dd>Pessoas surdas usuárias de Libras e ouvintes que precisam se comunicar com elas.</dd>
+                </div>
+                <div>
+                  <dt>Minha contribuição</dt>
+                  <dd>Desenvolvimento do modelo de Inteligência Artificial que reconhece os sinais a partir dos pontos das mãos.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article
+              class="projeto"
+              data-categorias="web aula"
+              aria-labelledby="titulo-primeiro-site"
+            >
+              <img
+                class="projeto__imagem"
+                src="img/projetos/primeiro-site.svg"
+                alt="Esboço de uma página simples em HTML, com título, menu de links e blocos de texto."
+                width="640"
+                height="400"
+              />
+              <div class="projeto__corpo">
+                <p class="projeto__tipo">Projeto de aula</p>
+                <h3 id="titulo-primeiro-site">Meu primeiro site</h3>
+                <p>
+                  Projeto criado para praticar estrutura HTML e organização de
+                  conteúdo.
+                </p>
+                <ul class="tecnologias">
+                  <li>HTML</li>
+                </ul>
+                <button
+                  class="projeto__alternar"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="detalhes-primeiro-site"
+                >
+                  Mostrar detalhes
+                </button>
+                <dl id="detalhes-primeiro-site" class="projeto__detalhes">
+                  <div>
+                    <dt>Problema</dt>
+                    <dd>Aprender a organizar o conteúdo de uma página antes de pensar na aparência.</dd>
+                  </div>
+                  <div>
+                    <dt>Público</dt>
+                    <dd>Turma e professora de Programação Front-End.</dd>
+                  </div>
+                  <div>
+                    <dt>Minha contribuição</dt>
+                    <dd>Projeto individual: estrutura HTML completa da página.</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+
+            <article
+              class="projeto"
+              data-categorias="web aula"
+              aria-labelledby="titulo-portfolio"
+            >
+              <img
+                class="projeto__imagem"
+                src="img/projetos/portfolio.svg"
+                alt="Miniatura deste portfólio: faixa azul com o nome no topo e seções de conteúdo abaixo."
+                width="640"
+                height="400"
+              />
+              <div class="projeto__corpo">
+                <p class="projeto__tipo">Projeto de aula</p>
+                <h3 id="titulo-portfolio">Portfólio pessoal</h3>
+                <p>Projeto em desenvolvimento para apresentar meus conhecimentos.</p>
+                <ul class="tecnologias">
+                  <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                </ul>
+                <button
+                  class="projeto__alternar"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="detalhes-portfolio"
+                >
+                  Mostrar detalhes
+                </button>
+                <dl id="detalhes-portfolio" class="projeto__detalhes">
+                  <div>
+                    <dt>Problema</dt>
+                    <dd>Reunir em um só lugar quem eu sou, meus projetos e formas de contato.</dd>
+                  </div>
+                  <div>
+                    <dt>Público</dt>
+                    <dd>Recrutadores, professores e pessoas interessadas em projetos comigo.</dd>
+                  </div>
+                  <div>
+                    <dt>Minha contribuição</dt>
+                    <dd>Projeto individual: estrutura, layout responsivo, filtro de projetos e formulário validado.</dd>
+                  </div>
+                </dl>
+                <!-- Quando publicar, adicione aqui o link do repositório:
+                <div class="projeto__acoes">
+                  <a class="botao" href="https://github.com/SEU-USUARIO/SEU-REPOSITORIO">Ver código no GitHub</a>
+                </div>
+                -->
+              </div>
+            </article>
+          </div>
+
+          <!-- Estado vazio do filtro -->
+          <div class="sem-resultados" hidden>
+            <p id="sem-resultados-texto"></p>
+            <button type="button" class="botao botao--contorno-escuro" data-limpar-filtro>
+              Mostrar todos os projetos
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="secao secao--alternada" aria-labelledby="titulo-contato">
+        <div class="secao__interno contato">
+          <div class="contato__texto">
+            <h2 id="titulo-contato">Contato</h2>
+            <p>
+              Para oportunidades profissionais, projetos ou uma conversa sobre
+              Inteligência Artificial e Front-End, fale comigo pelos canais abaixo
+              ou pelo formulário.
+            </p>
+            <ul class="canais">
+              <li>
+                <span class="canais__nome">WhatsApp</span>
+                <a href="https://wa.me/5571996592109" rel="noopener">(71) 99659-2109</a>
+              </li>
+              <li>
+                <span class="canais__nome">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/eduardoaldrim" rel="noopener">linkedin.com/in/eduardoaldrim</a>
+              </li>
+            </ul>
+            <p id="aviso-demonstracao" class="aviso">
+              <strong>Formulário em modo de demonstração.</strong> Ele valida os
+              dados e simula o envio, mas nenhuma mensagem é enviada. Para falar
+              comigo de verdade, use o WhatsApp ou o LinkedIn.
+            </p>
+          </div>
+
+          <!-- Formulário de contato: validação em script.js -->
+          <form
+            id="form-contato"
+            class="formulario"
+            novalidate
+            aria-describedby="aviso-demonstracao"
+          >
+            <p class="formulario__nota">Todos os campos são obrigatórios.</p>
+
+            <div class="resumo-erros" tabindex="-1" hidden>
+              <p class="resumo-erros__titulo"></p>
+              <ul class="resumo-erros__lista"></ul>
+            </div>
+
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <p id="nome-dica" class="campo__dica">De 3 a 80 caracteres.</p>
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                autocomplete="name"
+                required
+                minlength="3"
+                maxlength="80"
+                aria-describedby="nome-dica nome-erro"
+              />
+              <p id="nome-erro" class="campo__erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <p id="email-dica" class="campo__dica">Usado apenas para eu responder.</p>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                aria-describedby="email-dica email-erro"
+              />
+              <p id="email-erro" class="campo__erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="motivo">Motivo do contato</label>
+              <select id="motivo" name="motivo" required aria-describedby="motivo-erro">
+                <option value="">Selecione um motivo</option>
+                <option value="oportunidade">Oportunidade profissional</option>
+                <option value="freelance">Projeto freelance</option>
+                <option value="outro">Outro</option>
+              </select>
+              <p id="motivo-erro" class="campo__erro" hidden></p>
+            </div>
+
+            <!-- Só aparece quando o motivo é "Outro" -->
+            <div class="campo" id="campo-assunto" hidden>
+              <label for="assunto">Assunto</label>
+              <p id="assunto-dica" class="campo__dica">De 5 a 100 caracteres.</p>
+              <input
+                id="assunto"
+                name="assunto"
+                type="text"
+                required
+                minlength="5"
+                maxlength="100"
+                disabled
+                aria-describedby="assunto-dica assunto-erro"
+              />
+              <p id="assunto-erro" class="campo__erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <p id="mensagem-dica" class="campo__dica">De 30 a 1000 caracteres.</p>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="6"
+                required
+                minlength="30"
+                maxlength="1000"
+                aria-describedby="mensagem-dica mensagem-contador mensagem-erro"
+              ></textarea>
+              <p id="mensagem-contador" class="campo__contador">0 de 1000 caracteres</p>
+              <p id="mensagem-erro" class="campo__erro" hidden></p>
+            </div>
+
+            <!-- Controle de teste: escolhe o resultado da simulação -->
+            <fieldset class="simulacao">
+              <legend>Resultado da simulação</legend>
+              <label><input type="radio" name="simulacao" value="sucesso" checked /> Simular sucesso</label>
+              <label><input type="radio" name="simulacao" value="falha" /> Simular falha</label>
+            </fieldset>
+
+            <button class="botao botao--enviar" type="submit">Enviar mensagem</button>
+
+            <div id="form-status" class="formulario__status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <div class="rodape__interno">
+        <p>Portfólio de Eduardo Aldrim, 2026.</p>
+        <p>Desenvolvido na disciplina de Programação Front-End da UCSAL.</p>
+      </div>
+    </footer>
+  </body>
+</html>

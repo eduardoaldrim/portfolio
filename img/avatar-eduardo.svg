@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" rx="80" fill="#16245A"/>
+  <circle cx="80" cy="80" r="72" fill="none" stroke="#C9A227" stroke-width="2"/>
+  <text x="80" y="96" text-anchor="middle" font-family="IBM Plex Sans Condensed, Arial Narrow, Arial, sans-serif" font-weight="600" font-size="52" letter-spacing="1" fill="#FFFFFF">EA</text>
+</svg>

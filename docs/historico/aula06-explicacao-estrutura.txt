@@ -1,0 +1,62 @@
+Como a página do portfólio foi organizada?
+A página foi organizada do topo ao rodapé, dividida por função: cabeçalho com
+nome e menu, conteúdo principal com quatro seções, área complementar com
+informações extras e rodapé de encerramento.
+
+Onde foi usado o header?
+No topo da página, com meu nome no título principal (h1), uma frase curta de
+apresentação e o menu de navegação.
+
+Onde foi usado o nav?
+Dentro do header, reunindo os links internos Sobre mim, Conhecimentos, Projetos
+e Contato. Cada link aponta para o id de uma seção, e o texto de cada link
+indica claramente para onde o usuário será levado.
+
+Qual conteúdo ficou dentro do main?
+O conteúdo mais importante do portfólio: minha apresentação, meus conhecimentos,
+a tabela de habilidades, os cards de projetos e o formulário de contato.
+A página possui apenas um main.
+
+Quais seções foram criadas?
+Quatro seções, cada uma com título h2: Sobre mim, Conhecimentos, Projetos e Contato.
+
+Que informações foram organizadas na tabela?
+Minhas habilidades técnicas (HTML, CSS, JavaScript, Git e GitHub, CI/CD e N8N),
+com o nível de conhecimento e onde aplico cada uma. A tabela usa table, thead,
+tbody, tr, th e td.
+
+Por que a tabela foi adequada para esse tipo de informação?
+Porque são dados que se relacionam em linhas e colunas: cada tecnologia possui
+um nível e uma aplicação. A tabela facilita a leitura e a comparação desses
+dados e não foi usada para montar o layout da página.
+
+Por que os projetos foram organizados com article?
+Porque cada projeto é um conteúdo independente e completo, que faria sentido
+mesmo se fosse exibido fora da página. Cada card possui título h3, descrição
+e tecnologias. O projeto STL recebeu um id para que o link da seção Sobre mim
+leve o usuário diretamente até ele.
+
+Qual informação ficou no aside?
+Informações complementares: objetivo atual, perfil no LinkedIn, idiomas e áreas
+de interesse. São informações úteis, mas não fazem parte do conteúdo principal.
+
+O formulário possui label corretamente associado aos campos?
+Sim. O atributo for de cada label corresponde ao id do seu campo: nome, email
+e mensagem. Ao enviar, o formulário abre o WhatsApp no número (71) 99659-2109
+com o texto digitado no campo Mensagem. Por isso o textarea usa name="text",
+que é o nome que o WhatsApp reconhece para preencher a mensagem.
+
+O que ficou no footer?
+Meu nome, o ano de 2026 e a informação de que o portfólio foi desenvolvido
+como atividade da disciplina de Programação Front-End.
+
+Aula 10 - Portfólio responsivo:
+Foram adicionadas classes aos elementos semânticos (cabecalho, menu, secao,
+cards, card, botao, extra, rodape) para ligar o HTML ao CSS, uma imagem de
+perfil na pasta img e atributos data-label na tabela, usados pelo CSS para
+transformar cada linha em um bloco legível no celular. Os detalhes estão em
+reflexao.txt e readme.md.
+
+Foi necessário usar alguma div? Por quê?
+Não. Todas as partes da página tinham uma tag semântica adequada (header, nav,
+main, section, article, aside e footer), então não houve necessidade de div.
